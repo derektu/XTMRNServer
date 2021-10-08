@@ -1,0 +1,29 @@
+{
+  "name": "xtmrnserver",
+  "version": "1.0.0",
+  "description": "提供XTMRNSampler所需的server API",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --no-timeouts",
+    "dev": "node lib/app.js",
+    "start": "forever -f -w --watchDirectory lib --watchIgnore *.map lib/app.js"
+  },
+  "author": "derektu123@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^8.3.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "iconv-lite": "^0.4.24",
+    "lodash": "^4.17.21",
+    "log4js": "^6.3.0",
+    "minimist": "^1.2.5",
+    "moment": "^2.29.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "node-fetch": "^2.6.1",
+    "xmldom": "^0.5.0"
+  }
+}
